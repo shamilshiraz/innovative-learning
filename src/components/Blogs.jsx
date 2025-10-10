@@ -1,7 +1,7 @@
-// components/Courses.jsx
+// components/Blogs.jsx
 "use client";
 
-import coursesData from '/courses.json'; // Adjust the path as needed
+import blogsData from '../../blogs.json'; // Adjust the relative path to your blogs.json file
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -11,12 +11,12 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-export default function CoursePage() {
+export default function Blogs() {
   return (
-    <div className="py-10 px-8 bg-gray-50">
+    <div className="py-20 px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-extrabold text-[#213742] mb-12 text-center">
-          Explore Our Courses
+          Latest Insights & News
         </h1>
         
         <motion.div 
@@ -26,35 +26,36 @@ export default function CoursePage() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ staggerChildren: 0.15 }}
         >
-          {coursesData.map((course) => (
+          {blogsData.map((blog) => (
             <motion.div
-              key={course.id}
+              key={blog.id}
               variants={cardVariants}
               className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             >
-              <Link href={`/courses/${course.id}`} className="block">
-                {/* Course Image Area */}
+              <Link href={`/blogs/${blog.id}`} className="block">
+                {/* Blog Image Area */}
                 <div className="relative w-full h-48">
                   <Image
-                    src={course.image}
-                    alt={course.name}
+                    src={blog.image}
+                    alt={blog.head}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-black opacity-30"></div>
+                  <div className="absolute inset-0 bg-black opacity-10"></div>
                 </div>
 
-                {/* Course Details */}
+                {/* Blog Details */}
                 <div className="p-6">
-                  <h2 className="text-2xl font-bold text-[#b1976b] mb-3">
-                    {course.name}
+                  <p className="text-sm text-gray-500 mb-2">{blog.date}</p>
+                  <h2 className="text-xl font-bold text-[#213742] mb-3 line-clamp-2">
+                    {blog.head}
                   </h2>
-                  <p className="text-gray-600 mb-4 h-16 line-clamp-3">
-                    {course.desc}
+                  <p className="text-gray-600 mb-4 h-12 line-clamp-2 text-sm">
+                    {blog.description}
                   </p>
-                  <span className="text-[#213742] font-semibold flex items-center group">
-                    View Details
+                  <span className="text-[#b1976b] font-semibold flex items-center group">
+                    Read Article
                     <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>

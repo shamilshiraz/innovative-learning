@@ -1,0 +1,23 @@
+[
+  {
+    "id": "future-of-bim",
+    "head": "The Future is Digital: Why BIM (REVIT) is Essential for Modern Architecture",
+    "image": "/revit.png",
+    "description": "Building Information Modeling (BIM), powered by tools like Revit, is revolutionizing construction. Learn how digital collaboration leads to faster projects and fewer errors.",
+    "date": "Oct 1, 2025"
+  },
+  {
+    "id": "pmp-agile-hybrid",
+    "head": "PMP Exam Update: Mastering Agile and Hybrid Methodologies",
+    "image": "/pmp.png",
+    "description": "The PMP certification now requires deep knowledge of Agile practices. We break down the shift and provide strategies for managing projects in a hybrid environment.",
+    "date": "Sep 15, 2025"
+  },
+  {
+    "id": "leed-green-careers",
+    "head": "Building a Sustainable Career: The Demand for LEED Certified Professionals",
+    "image": "/leed.png",
+    "description": "As global focus shifts to sustainability, LEED Green Associate and AP certifications are becoming indispensable for high-value careers in green building and design.",
+    "date": "Aug 28, 2025"
+  }
+]
