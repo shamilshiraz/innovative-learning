@@ -1,0 +1,26 @@
+[
+  {
+    "id": "revit",
+    "name": "Autodesk Revit Architecture",
+    "desc": "Master Building Information Modeling (BIM) for structural design, construction, and detailed documentation.",
+    "image": "/revit.png",
+    "longDesc": "Revit is the industry-leading Building Information Modeling (BIM) software essential for architects, structural engineers, and contractors. This comprehensive course covers everything from basic drafting and 3D modeling to advanced features like rendering, work-sharing, and construction documentation. You'll learn to create high-quality, coordinated, and consistent design models.",
+    "brochureLink": "/brochures/revit-brochure.pdf"
+  },
+  {
+    "id": "pmp",
+    "name": "Project Management Professional (PMP)",
+    "desc": "The globally recognized certification for project managers, covering predictive, agile, and hybrid methodologies.",
+    "image": "/pmp.png",
+    "longDesc": "The PMP certification is highly sought after by organizations worldwide. Our course is aligned with the latest Project Management Body of Knowledge (PMBOK®) Guide and focuses on the three performance domains: People, Process, and Business Environment. You will gain the critical skills and knowledge needed to pass the PMP exam and manage complex projects successfully.",
+    "brochureLink": "/brochures/pmp-brochure.pdf"
+  },
+  {
+    "id": "leed-ga-ap",
+    "name": "LEED Green Associate & AP",
+    "desc": "Become certified in sustainable building practices, covering design, construction, and operation of green buildings.",
+    "image": "/leed.png",
+    "longDesc": "LEED (Leadership in Energy and Environmental Design) is the most widely used green building rating system in the world. This combined course prepares you first for the LEED Green Associate (GA) exam, covering basic concepts, and then the more advanced LEED Accredited Professional (AP) exam, focusing on a specific specialization (e.g., Building Design + Construction). Master the principles of sustainability and earn your credentials.",
+    "brochureLink": "/brochures/leed-brochure.pdf"
+  }
+]
