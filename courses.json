@@ -22,5 +22,77 @@
     "image": "/leed.png",
     "longDesc": "LEED (Leadership in Energy and Environmental Design) is the most widely used green building rating system in the world. This combined course prepares you first for the LEED Green Associate (GA) exam, covering basic concepts, and then the more advanced LEED Accredited Professional (AP) exam, focusing on a specific specialization (e.g., Building Design + Construction). Master the principles of sustainability and earn your credentials.",
     "brochureLink": "/brochures/leed-brochure.pdf"
+  },
+  {
+    "id": "primavera",
+    "name": "Primavera P6 Professional Project Management",
+    "desc": "Master powerful project scheduling, resource management, and risk analysis using the Primavera P6 software.",
+    "image": "/primavera.png",
+    "longDesc": "Primavera P6 is the recognized standard for high-performance project management in large-scale construction, engineering, and energy industries. This course teaches you critical techniques for creating a Work Breakdown Structure (WBS), managing resource allocation, monitoring progress, and forecasting project completion dates to ensure projects are delivered on time and budget.",
+    "brochureLink": "/brochures/primavera-brochure.pdf"
+  },
+  {
+    "id": "fidic",
+    "name": "FIDIC Contracts Masterclass",
+    "desc": "Understand the rights and obligations under the widely used FIDIC standard forms of contract for international construction projects.",
+    "image": "/fidic.png",
+    "longDesc": "FIDIC (Fédération Internationale Des Ingénieurs-Conseils) contracts are essential for anyone working on cross-border construction or engineering projects. This course provides an in-depth review of the Red, Yellow, and Silver books, covering topics like claims, dispute resolution (DAB), risk allocation, and practical application scenarios to manage contractual risks effectively.",
+    "brochureLink": "/brochures/fidic-brochure.pdf"
+  },
+  {
+    "id": "cpp",
+    "name": "Certified Pricing Professional (CPP)",
+    "desc": "Develop core skills in strategic pricing methods, cost analysis, and revenue optimization to maximize business profitability.",
+    "image": "/cpp.png",
+    "longDesc": "This certification focuses on the complex intersection of finance, marketing, and sales, providing a structured approach to setting and managing prices. You will learn various pricing models, elasticity analysis, competitive benchmarking, and strategies to align pricing decisions with overall business objectives and market demands.",
+    "brochureLink": "/brochures/cpp-brochure.pdf"
+  },
+  {
+    "id": "iso",
+    "name": "ISO 9001 Lead Auditor / Implementer",
+    "desc": "Gain expertise in auditing or implementing Quality Management Systems (QMS) based on the globally recognized ISO 9001 standard.",
+    "image": "/iso.png",
+    "longDesc": "This course covers the requirements of the ISO 9001:2015 standard in depth. Whether you choose the Lead Auditor stream (focused on external auditing) or the Lead Implementer stream (focused on establishing a QMS), you will learn how to plan, conduct, report, and follow-up on an audit, or how to design and integrate the QMS framework within an organization.",
+    "brochureLink": "/brochures/iso-brochure.pdf"
+  },
+  {
+    "id": "psp",
+    "name": "Planning and Scheduling Professional (PSP)",
+    "desc": "AACE International certification focusing on the critical elements of project scheduling, data analysis, and status reporting.",
+    "image": "/psp.png",
+    "longDesc": "The PSP certification validates advanced knowledge in planning and scheduling, including developing, analyzing, and maintaining project schedules. The curriculum covers Schedule Data Flow, Statistical Analysis, and Schedule Forensics, ensuring you can create and defend legally sound, realistic, and resource-leveled project timelines.",
+    "brochureLink": "/brochures/psp-brochure.pdf"
+  },
+  {
+    "id": "cfm",
+    "name": "Certified Facility Manager (CFM)",
+    "desc": "The globally recognized designation for facility management leaders, covering operations, finance, and leadership.",
+    "image": "/cfm.png",
+    "longDesc": "The CFM program is designed to elevate facility managers beyond operational roles, focusing on strategic and financial management. The course covers the 11 competencies of facility management, including Quality Assessment, Leadership, Communication, Technology Management, and Environmental Stewardship, preparing candidates for the IFMA CFM exam.",
+    "brochureLink": "/brochures/cfm-brochure.pdf"
+  },
+  {
+    "id": "ccp",
+    "name": "Certified Cost Professional (CCP)",
+    "desc": "AACE certification demonstrating expertise in total cost management, estimation, and earned value analysis.",
+    "image": "/ccp.png",
+    "longDesc": "The CCP certification is vital for professionals involved in project cost control and engineering. The curriculum includes cost estimating, planning and scheduling, progress and cost control, and profitability analysis. You will master techniques like Earned Value Management (EVM) to forecast project costs accurately and ensure budgetary compliance.",
+    "brochureLink": "/brochures/ccp-brochure.pdf"
+  },
+  {
+    "id": "ielts",
+    "name": "IELTS Preparation Course",
+    "desc": "Comprehensive training to achieve a high band score in the International English Language Testing System (IELTS) exam.",
+    "image": "/ielts.png",
+    "longDesc": "This structured preparation course covers all four modules of the IELTS exam: Listening, Reading, Writing, and Speaking. Our expert instructors provide focused practice, test-taking strategies, and personalized feedback designed to help academic and general training candidates achieve the band score required for immigration or university admission.",
+    "brochureLink": "/brochures/ielts-brochure.pdf"
+  },
+  {
+    "id": "cfps",
+    "name": "Certified Fire Protection Specialist (CFPS)",
+    "desc": "NFPA certification covering fire safety, prevention systems, fire code application, and emergency planning.",
+    "image": "/cfps.png",
+    "longDesc": "The CFPS designation validates your knowledge in fire protection, prevention, and suppression systems. This course, based on NFPA standards, provides a foundation in risk assessment, fire behavior, building construction safety, detection and alarm systems, and emergency response planning, crucial for safety and facility professionals.",
+    "brochureLink": "/brochures/cfps-brochure.pdf"
   }
 ]

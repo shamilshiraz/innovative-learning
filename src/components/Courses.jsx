@@ -26,14 +26,14 @@ export default function Courses() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ staggerChildren: 0.15 }}
         >
-          {coursesData.map((course) => (
+          {coursesData.slice(0, 3).map((course) => (  // 👈 Only first 3
             <motion.div
               key={course.id}
               variants={cardVariants}
               className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
             >
               <Link href={`/courses/${course.id}`} className="block">
-                {/* Course Image Area */}
+                {/* Course Image */}
                 <div className="relative w-full h-48">
                   <Image
                     src={course.image}
@@ -45,7 +45,7 @@ export default function Courses() {
                   <div className="absolute inset-0 bg-black opacity-30"></div>
                 </div>
 
-                {/* Course Details */}
+                {/* Course Info */}
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-[#b1976b] mb-3">
                     {course.name}
@@ -55,8 +55,19 @@ export default function Courses() {
                   </p>
                   <span className="text-[#213742] font-semibold flex items-center group">
                     View Details
-                    <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    <svg
+                      className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
                     </svg>
                   </span>
                 </div>
