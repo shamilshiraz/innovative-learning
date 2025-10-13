@@ -39,7 +39,7 @@ export default function LandingSection() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
         >
-          Welcome to Learners Point Academy, where professionals unlock their full potential
+          Welcome to Innovative Learning Horizons, where professionals unlock their full potential
         </motion.p>
       </div>
     </motion.div>

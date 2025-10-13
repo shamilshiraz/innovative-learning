@@ -37,13 +37,14 @@ export default function WelcomeSection() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8 text-[#213742]">
             What would you like to learn today?
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
-            A warm and enthusiastic welcome to each and every one of you who has chosen to
-            embark on a transformative educational journey with us at Innovative Learning
-            Horizons. We are absolutely thrilled to have you join our vibrant community, a place
-            where curiosity is celebrated, knowledge is power, and the future is shaped by the
-            innovative minds we cultivate.
-          </p>
+<p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
+  Welcome to Innovative Learning Horizons, where ambition meets opportunity and global standards
+  define success. We are honored to guide you on this professional learning journey that bridges
+  knowledge, skill, and industry relevance. Our community thrives on curiosity, innovation, and a
+  shared vision for excellence. Together, we aim to transform aspirations into achievements and
+  equip you with the confidence to lead, grow, and excel worldwide.
+</p>
+
           <Link href="/about">
             <motion.button
               className="bg-[#213742] text-white px-10 py-4 rounded-lg text-xl font-medium hover:bg-[#102532] transition duration-300 ease-in-out"
