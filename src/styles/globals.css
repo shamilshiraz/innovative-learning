@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
-body{
+html {
+  overflow-y: scroll; /* reserve scrollbar space to prevent layout shift */
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: "Afacad", sans-serif;
+  width: 100%; /* use full width of parent instead of 100vw */
+  overflow-x: hidden; /* prevent horizontal overflow */
+  font-family: "Afacad", sans-serif;
 }

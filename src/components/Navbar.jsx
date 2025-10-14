@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky w-full top-0 left-0 z-50">
+    <header className="sticky w-screen top-0 left-0 z-50">
       {/* Top welcome bar */}
       <div className="  w-full bg-[#b1976b] text-center py-2 text-black text-base">
         welcome to our site
@@ -72,7 +72,7 @@ export default function Navbar() {
         <ul
           className={`md:hidden ${
             menuOpen
-              ? "fixed inset-0 bg-[#102532] text-white flex justify-center items-center flex-col gap-10 z-20 text-2xl"
+              ? "fixed inset-0 w-screen bg-[#102532] text-white flex justify-center items-center flex-col gap-10 z-20 text-2xl"
               : "hidden"
           } transition-all duration-300`}
         >
