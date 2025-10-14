@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function LandingSection() {
   return (
     <motion.div
-      className="relative w-full h-[600px] flex items-center justify-center text-center overflow-hidden"
+      className="relative w-[100vw] h-[600px] flex items-center justify-center text-center overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, ease: "easeOut" }}

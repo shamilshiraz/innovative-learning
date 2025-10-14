@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky max-w-[100vw] top-0 left-0 z-50">
+    <header className="sticky w-[100vw] top-0 left-0 z-50">
       {/* Top welcome bar */}
       <div className="  w-full bg-[#b1976b] text-center py-2 text-black text-base">
         welcome to our site
