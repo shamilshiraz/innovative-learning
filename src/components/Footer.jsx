@@ -59,13 +59,13 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#b1976b] mr-3 mt-1 flex-shrink-0" />
                 <address className="not-italic">
-                  123 Knowledge Blvd,<br />
-                  Tech City, CA 90210
+                  Al Khobar,<br />
+                  Saudi Arabia, 34627
                 </address>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#b1976b] mr-3" />
-                <span>+1 (555) 123-4567</span>
+                <span>+966 51 174 2526</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#b1976b] mr-3" />
