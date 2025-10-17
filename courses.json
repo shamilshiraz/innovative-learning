@@ -5,7 +5,7 @@
     "desc": "Master Building Information Modeling (BIM) for structural design, construction, and detailed documentation.",
     "image": "/revit.png",
     "longDesc": "Revit is the industry-leading Building Information Modeling (BIM) software essential for architects, structural engineers, and contractors. This comprehensive course covers everything from basic drafting and 3D modeling to advanced features like rendering, work-sharing, and construction documentation. You'll learn to create high-quality, coordinated, and consistent design models.",
-    "brochureLink": "/brochures/revit-brochure.pdf"
+    "brochureLink": "https://drive.google.com/file/d/1yJ90QrYzYaxdSpVQ-D96CHEIDCCWIoSw/view?usp=sharing"
   },
   {
     "id": "pmp",
@@ -21,7 +21,7 @@
     "desc": "Become certified in sustainable building practices, covering design, construction, and operation of green buildings.",
     "image": "/leed.png",
     "longDesc": "LEED (Leadership in Energy and Environmental Design) is the most widely used green building rating system in the world. This combined course prepares you first for the LEED Green Associate (GA) exam, covering basic concepts, and then the more advanced LEED Accredited Professional (AP) exam, focusing on a specific specialization (e.g., Building Design + Construction). Master the principles of sustainability and earn your credentials.",
-    "brochureLink": "/brochures/leed-brochure.pdf"
+    "brochureLink": "https://drive.google.com/file/d/1YOnSPiGqrSzHcJR7YGZdwo06s2iX-B35/view?usp=sharing"
   },
   {
     "id": "primavera",
@@ -29,7 +29,7 @@
     "desc": "Master powerful project scheduling, resource management, and risk analysis using the Primavera P6 software.",
     "image": "/p6.png",
     "longDesc": "Primavera P6 is the recognized standard for high-performance project management in large-scale construction, engineering, and energy industries. This course teaches you critical techniques for creating a Work Breakdown Structure (WBS), managing resource allocation, monitoring progress, and forecasting project completion dates to ensure projects are delivered on time and budget.",
-    "brochureLink": "/brochures/primavera-brochure.pdf"
+    "brochureLink": "https://drive.google.com/file/d/1BH0jk2zJZRsD7hgD-vxw1QHS27AazJ7T/view?usp=sharing"
   },
   {
     "id": "fidic",
@@ -45,7 +45,7 @@
     "desc": "Develop core skills in strategic pricing methods, cost analysis, and revenue optimization to maximize business profitability.",
     "image": "/cpp.png",
     "longDesc": "This certification focuses on the complex intersection of finance, marketing, and sales, providing a structured approach to setting and managing prices. You will learn various pricing models, elasticity analysis, competitive benchmarking, and strategies to align pricing decisions with overall business objectives and market demands.",
-    "brochureLink": "/brochures/cpp-brochure.pdf"
+    "brochureLink": "https://drive.google.com/file/d/1EC_aOtKKbIpmwq8JaLC-Kza6Swd_nOG6/view?usp=sharing"
   },
   {
     "id": "iso",
