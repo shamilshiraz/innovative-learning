@@ -59,7 +59,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#b1976b] mr-3 mt-1 flex-shrink-0" />
                 <address className="not-italic">
-                  Al Khobar,<br />
+                  207, King Fahad Abdulaziz st
+                  Al Khobar, Al fawaziya area<br />
                   Saudi Arabia, 34627
                 </address>
               </li>
