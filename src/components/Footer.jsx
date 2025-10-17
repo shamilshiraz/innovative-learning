@@ -81,11 +81,11 @@ const Footer = () => {
               Follow Us
             </h4>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.facebook.com/profile.php?id=61581583274859" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-400 hover:text-[#b1976b] transition duration-200">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.instagram.com/innovative_learning_horizons?igsh=MXh2aGx1MDNmcmV4cA==" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-400 hover:text-[#b1976b] transition duration-200">
                 <Instagram className="w-6 h-6" />
               </a>
