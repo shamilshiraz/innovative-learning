@@ -18,12 +18,12 @@ export default function CoursePage() {
         <h1 className="text-5xl font-extrabold text-[#213742] mb-12 text-center">
           Explore Our Courses
         </h1>
-        
-        <motion.div 
+
+        {/* Removed whileInView and viewport */}
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          animate="visible"
           transition={{ staggerChildren: 0.15 }}
         >
           {coursesData.map((course) => (
@@ -55,8 +55,19 @@ export default function CoursePage() {
                   </p>
                   <span className="text-[#213742] font-semibold flex items-center group">
                     View Details
-                    <svg className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    <svg
+                      className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
                     </svg>
                   </span>
                 </div>
