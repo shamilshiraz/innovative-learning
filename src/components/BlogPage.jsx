@@ -38,6 +38,7 @@ export default function BlogPage() {
 
           return {
             id: item.id,
+            slug: item.slug, // ✅ use slug from Strapi
             head: item.head || "No Title",
             description: item.description || "",
             date: item.date || "",
@@ -75,8 +76,8 @@ export default function BlogPage() {
                 variants={cardVariants}
                 className="bg-white rounded-xl shadow-xl overflow-hidden transform hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
               >
-                <Link href={`/blogs/${blog.id}`} className="block">
-                  {/* Blog Image (only if exists) */}
+                {/* ✅ Link by slug instead of ID */}
+                <Link href={`/blogs/${blog.slug}`} className="block">
                   {blog.image && (
                     <div className="relative w-full h-48">
                       <Image
@@ -91,7 +92,6 @@ export default function BlogPage() {
                     </div>
                   )}
 
-                  {/* Blog Details */}
                   <div className="p-6">
                     <p className="text-sm text-gray-500 mb-2">{blog.date}</p>
                     <h2 className="text-xl font-bold text-[#213742] mb-3 line-clamp-2">
