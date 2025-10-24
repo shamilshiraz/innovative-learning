@@ -1,32 +1,32 @@
-// ✅ pages/courses/[coursename].js — Restored Original Layout + SEO Tags (no visual change)
+// ✅ pages/courses/[coursename].js — SEO-FIXED with Static Generation (for Google + OG tools)
 
-import { useRouter } from 'next/router';
 import coursesData from '../../../courses.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import Head from 'next/head';
 
-// Helper function to get course by ID
-const getCourseData = (id) => {
-  return coursesData.find((course) => course.id === id);
-};
+// Helper: Find course by ID
+const getCourseData = (id) => coursesData.find((course) => course.id === id);
 
-export default function CoursePage() {
-  const router = useRouter();
-  const { coursename } = router.query;
+export async function getStaticPaths() {
+  // Generate all paths for available courses
+  const paths = coursesData.map((course) => ({
+    params: { coursename: course.id },
+  }));
 
-  if (!coursename) {
-    return <div className="p-20 text-center">Loading course details...</div>;
-  }
+  return { paths, fallback: false }; // no extra 404 issues
+}
 
-  const course = getCourseData(coursename);
+export async function getStaticProps({ params }) {
+  const course = getCourseData(params.coursename);
+  return { props: { course } };
+}
 
+export default function CoursePage({ course }) {
   if (!course) {
     return (
       <div className="p-20 text-center min-h-screen">
         <h1 className="text-4xl font-bold text-red-600">404 - Course Not Found</h1>
-        <p className="mt-4 text-gray-600">The course ID "{coursename}" does not exist.</p>
         <Link href="/courses" className="text-lg text-[#b1976b] hover:underline mt-8 inline-block">
           &larr; Back to all Courses
         </Link>
@@ -36,12 +36,12 @@ export default function CoursePage() {
 
   return (
     <>
-      {/* 🔹 SEO Meta Tags (No design impact) */}
+      {/* ✅ SEO Tags (Now Pre-rendered & Visible in Source) */}
       <Head>
         <title>{course.name} | Innovative Learning Horizons (ILH) Saudi Arabia</title>
         <meta
           name="description"
-          content={`Join ILH for ${course.name} in Saudi Arabia. Learn practical, career-focused skills with certified training programs designed for professionals.`}
+          content={`Join ILH for ${course.name} in Saudi Arabia. Learn practical, career-focused skills with certified training programs.`}
         />
         <meta
           name="keywords"
@@ -59,24 +59,19 @@ export default function CoursePage() {
         <meta property="og:url" content={`https://www.innovativelh.com/courses/${course.id}`} />
       </Head>
 
-      {/* 🔹 ORIGINAL COURSE LAYOUT (Untouched) */}
+      {/* Original Layout (unchanged visually) */}
       <div className="py-20 px-8 bg-white min-h-screen">
         <div className="max-w-7xl mx-auto">
           <Link href="/courses" className="text-lg text-[#b1976b] hover:underline mb-8 inline-block">
             &larr; Back to all Courses
           </Link>
 
-          {/* Header Section (your previous style) */}
           <div className="mb-12">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-[#213742] mb-4">
-              {course.name}
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold text-[#213742] mb-4">{course.name}</h1>
             <p className="text-2xl text-gray-600 border-l-4 border-[#b1976b] pl-4">{course.desc}</p>
           </div>
 
-          {/* Course Layout — unchanged */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Left Column */}
             <div className="lg:col-span-2 space-y-8">
               <h2 className="text-3xl font-bold text-[#213742]">Course Overview</h2>
               <p className="text-gray-700 text-lg leading-relaxed">{course.longDesc}</p>
@@ -105,7 +100,6 @@ export default function CoursePage() {
               </a>
             </div>
 
-            {/* Right Column (Image + Info) */}
             <div className="lg:col-span-1">
               <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-lg mb-8">
                 <Image
