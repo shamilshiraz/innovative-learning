@@ -59,6 +59,10 @@ const Index = () => {
       </h1>
 
       {/* ✅ Page Sections */}
+      <h1 className="text-5xl font-bold text-center text-[#213742] my-10">
+  Professional Training Institute in Saudi Arabia – Innovative Learning Horizons (ILH)
+</h1>
+
       <LandingSection />
       <WelcomeSection />
       <Courses />
