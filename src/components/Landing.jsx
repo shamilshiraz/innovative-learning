@@ -36,7 +36,6 @@ export default function LandingSection() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
         >
-          <span className="block">Your Career Starts with</span>
           <span className="block">Innovative Learning Horizon</span>
         </motion.h1>
 
