@@ -2,7 +2,6 @@ import Blogs from '@/components/Blogs'
 import Courses from '@/components/Courses'
 import WelcomeSection from '@/components/Intro'
 import LandingSection from '@/components/Landing'
-import Navbar from '@/components/Navbar'
 import WhyChooseUs from '@/components/Why'
 import React from 'react'
 import Head from 'next/head'
@@ -43,7 +42,6 @@ const Index = () => {
       </Head>
 
       {/* ✅ Single Navbar (Fixes the double header issue) */}
-      <Navbar />
 
       {/* ✅ Hidden but SEO & Audit-friendly H1 */}
       <h1
@@ -58,10 +56,6 @@ const Index = () => {
         Professional Training Institute in Saudi Arabia
       </h1>
 
-      {/* ✅ Page Sections */}
-      <h1 className="text-5xl font-bold text-center text-[#213742] my-10">
-  Professional Training Institute in Saudi Arabia – Innovative Learning Horizons (ILH)
-</h1>
 
       <LandingSection />
       <WelcomeSection />
