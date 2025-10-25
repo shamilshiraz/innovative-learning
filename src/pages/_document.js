@@ -4,6 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* ✅ Google Fonts preconnect and stylesheet */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet"
+        />
+
         {/* ✅ ILH ORGANIZATION SCHEMA (Visible to Google Knowledge Graph) */}
         <script
           type="application/ld+json"
@@ -34,7 +42,7 @@ export default function Document() {
               },
               sameAs: [
                 'https://www.facebook.com/profile.php?id=61581583274859',
-                'https://www.instagram.com/innovative_learning_horizons',,
+                'https://www.instagram.com/innovative_learning_horizons',
               ],
             }),
           }}
