@@ -4,10 +4,15 @@ import WelcomeSection from '@/components/Intro'
 import LandingSection from '@/components/Landing'
 import WhyChooseUs from '@/components/Why'
 import React from 'react'
+<<<<<<< HEAD
 import Head from 'next/head'
+=======
+import Schedule from './schedule'
+>>>>>>> abfe56a (changed images)
 
 const Index = () => {
   return (
+<<<<<<< HEAD
     <>
       <Head>
         {/* 🔹 Basic SEO Meta Tags */}
@@ -63,6 +68,16 @@ const Index = () => {
       <WhyChooseUs />
       <Blogs />
     </>
+=======
+    <div>
+      <LandingSection/>
+      <WelcomeSection/>
+      <Courses/>
+      <WhyChooseUs/>
+      <Schedule/>
+      <Blogs/>
+    </div>
+>>>>>>> abfe56a (changed images)
   )
 }
 
