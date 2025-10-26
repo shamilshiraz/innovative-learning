@@ -65,7 +65,7 @@ export default function WelcomeSection() {
           {/* Note: If you want the image to have sharp corners, you must remove rounded-xl from this container */}
           <Image
             src="/students.jpg" // **IMPORTANT: Replace with your actual image path**
-            alt="Two students collaborating on a laptop"
+            alt="Two students collaborating on a laptop during a professional training session at Innovative Learning Horizons Saudi Arabia"
             fill
             priority
             className="object-cover object-center"
