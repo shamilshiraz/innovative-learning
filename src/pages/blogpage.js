@@ -6,6 +6,7 @@ export default function BlogSinglePage() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://www.innovativelh.com/blogpage" />
         {/* 🔹 SEO Title & Description */}
         <title>ILH Blog Page | Professional Training Insights & Success Stories</title>
         <meta
@@ -25,7 +26,7 @@ export default function BlogSinglePage() {
         />
         <meta property="og:image" content="https://www.innovativelh.com/og-image.jpg" />
         <meta property="og:url" content="https://www.innovativelh.com/blogpage" />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
 
         {/* 🔹 Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -35,6 +36,33 @@ export default function BlogSinglePage() {
           content="Gain valuable knowledge from ILH blogs – covering training insights, certifications, and student success stories."
         />
         <meta name="twitter:image" content="https://www.innovativelh.com/og-image.jpg" />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Innovative Learning Horizons Blog",
+      "url": "https://www.innovativelh.com/blogpage",
+      "description":
+        "Read ILH blogs featuring insights, success stories, and professional training guidance from Saudi Arabia’s trusted institute.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Innovative Learning Horizons (ILH)",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.innovativelh.com/logo.png"
+        }
+      },
+      "sameAs": [
+        "https://www.facebook.com/innovativelh",
+        "https://www.instagram.com/innovativelh",
+        "https://www.linkedin.com/company/innovativelh"
+      ]
+    }),
+  }}
+/>
+
       </Head>
 
       {/* 🔹 Hidden H1 for SEO & audit tools */}
@@ -51,7 +79,10 @@ export default function BlogSinglePage() {
       </h1>
 
       {/* 🔹 Page Content */}
-      <BlogPage />
+      <main>
+  <BlogPage />
+</main>
+
     </>
   )
 }

@@ -6,6 +6,7 @@ export default function ContactPage() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://www.innovativelh.com/contact" />
         <title>Contact ILH | Professional Training Institute in Saudi Arabia</title>
         <meta
           name="description"
@@ -34,6 +35,34 @@ export default function ContactPage() {
           content="Connect with ILH for course details and professional training guidance in Saudi Arabia."
         />
         <meta name="twitter:image" content="https://www.innovativelh.com/og-image.jpg" />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Innovative Learning Horizons (ILH)",
+        "url": "https://www.innovativelh.com",
+        "logo": "https://www.innovativelh.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+966-5XXXXXXX",
+          "contactType": "customer service",
+          "areaServed": "SA",
+          "availableLanguage": ["English", "Arabic"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "King Fahad Abdulaziz St, Al Khobar",
+          "addressCountry": "Saudi Arabia"
+        }
+      }
+    }),
+  }}
+/>
+
       </Head>
 
       <h1
@@ -48,7 +77,10 @@ export default function ContactPage() {
         Contact Innovative Learning Horizons in Saudi Arabia
       </h1>
 
-      <Contact />
+      <main>
+  <Contact />
+</main>
+
     </>
   )
 }

@@ -2,6 +2,8 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import Link from "next/link";
+
 // Import specific icons from lucide-react
 import { Users, RefreshCw, Zap, ThumbsUp } from 'lucide-react'; // Changed icons to fit the categories better
 
@@ -58,6 +60,7 @@ export default function WhyChooseUs() {
             Our commitment to excellence, cutting-edge curriculum, and supportive community ensure that every professional
             can achieve their highest potential. We focus on practical skills, industry relevance, and fostering a passion for lifelong learning.
           </p>
+
         </motion.div>
 
         {/* Statistics Section */}
@@ -87,6 +90,13 @@ export default function WhyChooseUs() {
             </motion.div>
           ))}
         </motion.div>
+
+         <p className="mt-6 text-lg">
+  Want to learn more about our programs?{" "}
+  <Link href="/courses" className="text-[#b1976b] hover:underline font-medium">
+    Explore our certified training courses.
+  </Link>
+</p>
       </div>
     </div>
   );

@@ -40,10 +40,19 @@ export default function WelcomeSection() {
 <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
   Welcome to Innovative Learning Horizons, where ambition meets opportunity and global standards
   define success. We are honored to guide you on this professional learning journey that bridges
-  knowledge, skill, and industry relevance. Our community thrives on curiosity, innovation, and a
+  knowledge, skill, and {" "}
+    <Link href="/courses" className="text-[#b1976b] hover:underline">
+      industry relevance
+    </Link>.</p>
+    
+    <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10"> Our community thrives on curiosity, innovation, and a
   shared vision for excellence. Together, we aim to transform aspirations into achievements and
-  equip you with the confidence to lead, grow, and excel worldwide.
+  equip you with the confidence to lead, grow, and <Link href="/about" className="text-[#b1976b] hover:underline">
+      excel worldwide
+    </Link>.
 </p>
+
+
 
           <Link href="/about">
             <motion.button

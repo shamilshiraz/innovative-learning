@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ContactPage() {
   const [result, setResult] = useState("");
@@ -87,6 +88,13 @@ export default function ContactPage() {
           )}
         </form>
       </div>
+      <p className="text-lg mt-4">
+  Want to know who we are?{" "}
+  <Link href="/about" className="text-[#b1976b] hover:underline">
+    Learn about Innovative Learning Horizons.
+  </Link>
+</p>
+
     </div>
   );
 }

@@ -75,6 +75,19 @@ export default function CoursePage() {
             </motion.div>
           ))}
         </motion.div>
+
+       <p className="text-lg text-gray-700 mt-8 text-center">
+  Learn more about our{" "}
+  <Link href="/about" className="text-[#b1976b] hover:underline">
+    mission and training approach
+  </Link>{" "}
+  or read insights on our{" "}
+  <Link href="/blogs" className="text-[#b1976b] hover:underline">
+    latest industry blogs
+  </Link>.
+</p>
+
+        
       </div>
     </div>
   );
