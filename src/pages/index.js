@@ -6,6 +6,7 @@ import LandingSection from '@/components/Landing'
 import Navbar from '@/components/Navbar'
 import WhyChooseUs from '@/components/Why'
 import React from 'react'
+import Head from "next/head";
 
 const index = () => {
   return (
