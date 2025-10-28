@@ -4,15 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* ✅ Google Fonts preconnect and stylesheet */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
-          rel="stylesheet"
-        />
-
-        {/* ✅ ILH ORGANIZATION SCHEMA (Visible to Google Knowledge Graph) */}
         {/* ✅ Basic Meta Fallbacks */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,6 +14,25 @@ export default function Document() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#b1976b" />
+        
+        {/* ✅ Ahref installation */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="6GsYocIP1Z05nJKLoVupGA" async></script>
+
+         {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XDYZ295VLS"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XDYZ295VLS');
+            `,
+          }}
+        />
 
         {/* ✅ ILH ORGANIZATION SCHEMA */}
         <script
