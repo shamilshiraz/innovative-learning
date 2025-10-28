@@ -24,6 +24,25 @@ export default function Document() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#b1976b" />
 
+        {/* ✅ Ahref Analytics */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="6GsYocIP1Z05nJKLoVupGA" async></script>
+
+        {/* Google Analytics Tag */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XDYZ295VLS"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XDYZ295VLS');
+            `,
+          }}
+        />
+
         {/* ✅ ILH ORGANIZATION SCHEMA */}
         <script
           type="application/ld+json"
