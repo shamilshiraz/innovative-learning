@@ -6,6 +6,8 @@ export default function Courses() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://www.innovativelh.com/courses" />
+
         <title>Courses | ILH Saudi Arabia – Professional Training Programs</title>
         <meta
           name="description"
@@ -34,6 +36,50 @@ export default function Courses() {
           content="ILH offers certified BIM, PMP, and technical training courses across Saudi Arabia."
         />
         <meta name="twitter:image" content="https://www.innovativelh.com/og-image.jpg" />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "ILH Certified Courses",
+      "description":
+        "Explore certified professional training courses offered by Innovative Learning Horizons (ILH) across Saudi Arabia.",
+      "url": "https://www.innovativelh.com/courses",
+      "numberOfItems": 8, // Adjust to total number of courses
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "Project Management Professional (PMP)",
+          "provider": {
+            "@type": "Organization",
+            "name": "Innovative Learning Horizons (ILH)",
+            "url": "https://www.innovativelh.com",
+          },
+        },
+        {
+          "@type": "Course",
+          "name": "Building Information Modeling (BIM)",
+          "provider": {
+            "@type": "Organization",
+            "name": "Innovative Learning Horizons (ILH)",
+            "url": "https://www.innovativelh.com",
+          },
+        },
+        {
+          "@type": "Course",
+          "name": "AutoCAD 2D & 3D",
+          "provider": {
+            "@type": "Organization",
+            "name": "Innovative Learning Horizons (ILH)",
+            "url": "https://www.innovativelh.com",
+          },
+        },
+      ],
+    }),
+  }}
+/>
+
       </Head>
 
       <h1
@@ -48,7 +94,10 @@ export default function Courses() {
         ILH Certified Training Courses in Saudi Arabia
       </h1>
 
-      <CoursePage />
+      <main>
+  <CoursePage />
+</main>
+
     </>
   )
 }

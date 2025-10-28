@@ -14,7 +14,7 @@ export default function LandingSection() {
       {/* Background Image */}
       <Image
         src="/landing.jpg"
-        alt="Innovative Learning Horizons - Professional training institute in Saudi Arabia"
+        alt="Innovative Learning Horizons campus – leading professional training institute in Saudi Arabia"
         fill
         priority
         className="object-cover object-center"

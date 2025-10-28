@@ -1,5 +1,6 @@
 // components/AboutPage.jsx or pages/about.jsx
 import Image from "next/image";
+import Link from "next/link";
 import { Target, Lightbulb, Handshake, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -63,12 +64,20 @@ export default function AboutPage() {
               Innovative Learning Horizon was established by professionals from
               diverse industries, aiming to deliver holistic competency
               development programs for students and professionals alike.
+              Learn more about our{" "}
+    <Link href="/about" className="text-[#b1976b] hover:underline">
+      mission and values
+    </Link>.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               We enhance knowledge and skills to empower learners to advance in
-              their chosen career paths. Our certifications span Quality, Human
+              their chosen career paths. Explore our{" "}
+    <Link href="/courses" className="text-[#b1976b] hover:underline">
+      certification courses
+    </Link>{" "} certifications span Quality, Human
               Resources, Supply Chain, Finance, and more.
             </p>
+
           </div>
           <div className="relative order-1 md:order-2 w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
@@ -153,8 +162,16 @@ export default function AboutPage() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            Contact us for course schedules and registration details.
-          </p>
+  Check our{" "}
+  <Link href="/courses" className="text-[#b1976b] hover:underline">
+    industry-focused courses
+  </Link>{" "}
+  or{" "}
+  <Link href="/contact" className="text-[#b1976b] hover:underline">
+    contact us
+  </Link>{" "}
+  to enroll today.
+</p>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10">
             <p className="text-lg sm:text-xl font-semibold text-[#b1976b]">
@@ -174,7 +191,9 @@ export default function AboutPage() {
           <p className="text-sm text-gray-500 mt-3">
             Located in Al Khobar, Saudi Arabia (Postal Code: 34627)
           </p>
+        
         </motion.section>
+
       </div>
     </motion.div>
   );

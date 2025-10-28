@@ -38,7 +38,33 @@ export default function CoursePage({ course }) {
     <>
       {/* ✅ SEO Tags (Now Pre-rendered & Visible in Source) */}
       <Head>
-        <title>{course.name} | Innovative Learning Horizons (ILH) Saudi Arabia</title>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": course.name,
+      "description": course.longDesc,
+      "provider": {
+        "@type": "Organization",
+        "name": "Innovative Learning Horizons (ILH)",
+        "url": "https://www.innovativelh.com"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online & Classroom",
+        "location": {
+          "@type": "Place",
+          "name": "Saudi Arabia"
+        }
+      }
+    }),
+  }}
+/>
+<link rel="canonical" href={`https://www.innovativelh.com/courses/${course.id}`} />
+
+        <title>{course.name} | Professional Training by Innovative Learning Horizons (ILH) Saudi Arabia</title>
         <meta
           name="description"
           content={`Join ILH for ${course.name} in Saudi Arabia. Learn practical, career-focused skills with certified training programs.`}
@@ -74,12 +100,13 @@ export default function CoursePage({ course }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
               <h2 className="text-3xl font-bold text-[#213742]">Course Overview</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">{course.longDesc}</p>
+              <p className="text-gray-700 text-lg leading-relaxed ">{course.longDesc}</p>
 
               <a
                 href={course.brochureLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Download brochure for ${course.name}`}
                 className="inline-flex items-center justify-center bg-[#b1976b] text-white px-8 py-4 rounded-lg text-xl font-medium hover:bg-[#a0855c] transition duration-300 shadow-md"
               >
                 Download Course Brochure
@@ -106,6 +133,7 @@ export default function CoursePage({ course }) {
                   src={course.image}
                   alt={course.name}
                   fill
+                  priority
                   sizes="(max-width: 1024px) 100vw, 33vw"
                   className="object-cover"
                 />

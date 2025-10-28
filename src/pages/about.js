@@ -6,6 +6,8 @@ export default function About() {
   return (
     <>
       <Head>
+        <link rel="canonical" href="https://www.innovativelh.com/about" />
+
         {/* 🔹 Page Title & Description */}
         <title>About ILH | Innovative Learning Horizons in Saudi Arabia</title>
         <meta
@@ -35,6 +37,38 @@ export default function About() {
           content="Learn about ILH — Saudi Arabia’s leading institute for skill-based and certified professional training."
         />
         <meta name="twitter:image" content="https://www.innovativelh.com/og-image.jpg" />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Innovative Learning Horizons (ILH)",
+      "alternateName": "ILH Saudi Arabia",
+      "url": "https://www.innovativelh.com",
+      "logo": "https://www.innovativelh.com/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/innovativelh",
+        "https://www.instagram.com/innovativelh",
+        "https://www.linkedin.com/company/innovativelh"
+      ],
+      "description": "Innovative Learning Horizons (ILH) is a Saudi Arabia-based professional training institute offering certified skill development programs for students and working professionals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "King Fahad Abdulaziz St, Al Khobar",
+        "addressCountry": "Saudi Arabia"
+      },
+      "foundingDate": "2012",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+966-xxxx-xxxx",
+        "email": "info@innovativelh.com"
+      }
+    }),
+  }}
+/>
+
       </Head>
 
       {/* ✅ Hidden H1 (SEO + Audit Friendly, invisible to users) */}
@@ -51,7 +85,9 @@ export default function About() {
       </h1>
 
       {/* ✅ Actual About Page Component */}
-      <AboutPage />
+      <main>
+        <AboutPage />
+      </main>
     </>
   )
 }

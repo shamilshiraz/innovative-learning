@@ -13,6 +13,18 @@ export default function Document() {
         />
 
         {/* ✅ ILH ORGANIZATION SCHEMA (Visible to Google Knowledge Graph) */}
+        {/* ✅ Basic Meta Fallbacks */}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
+        {/* ✅ Favicon & PWA */}
+        <link rel="icon" href="/ilh.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#b1976b" />
+
+        {/* ✅ ILH ORGANIZATION SCHEMA */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -43,7 +55,26 @@ export default function Document() {
               sameAs: [
                 'https://www.facebook.com/profile.php?id=61581583274859',
                 'https://www.instagram.com/innovative_learning_horizons',
+                'https://www.linkedin.com/company/innovativelh',
               ],
+            }),
+          }}
+        />
+
+        {/* ✅ WEBSITE SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              url: 'https://www.innovativelh.com/',
+              name: 'Innovative Learning Horizons (ILH)',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://www.innovativelh.com/search?q={search_term_string}',
+                'query-input': 'required name=search_term_string',
+              },
             }),
           }}
         />

@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="flex items-center">
           <Image
             src="/innovativelogo.png"
-            alt="Logo"
+            alt="Innovative Learning Horizons logo – professional training institute in Saudi Arabia"
             width={60}
             height={60}
             className="mr-3"
