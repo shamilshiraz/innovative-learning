@@ -123,6 +123,7 @@ const index = () => {
   <WelcomeSection />
   <Courses />
   <WhyChooseUs />
+  <Schedule/>
   <Blogs />
 </main>
 
