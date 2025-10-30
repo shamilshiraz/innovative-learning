@@ -7,14 +7,14 @@ export default function ContactPage() {
     <>
       <Head>
         <link rel="canonical" href="https://www.innovativelh.com/contact" />
-        <title>Contact ILH | Professional Training Institute in Saudi Arabia</title>
+        <title>Contact Innovative Learning Horizons | Professional Training Institute Saudi Arabia</title>
         <meta
           name="description"
-          content="Get in touch with Innovative Learning Horizons (ILH) in Saudi Arabia for inquiries about courses, admissions, and certifications."
+          content="Get in touch with Innovative Learning Horizons (ILH), Saudi Arabia’s trusted professional training institute. Contact us for details on PMP, LEED, Revit, and Primavera certification programs."
         />
         <meta
           name="keywords"
-          content="contact ILH, ILH Saudi Arabia, training inquiries, course registration"
+          content="contact ILH, training institute Saudi Arabia, PMP course, LEED certification, professional courses Saudi Arabia"
         />
 
         {/* OG Tags */}
@@ -74,8 +74,18 @@ export default function ContactPage() {
           overflow: 'hidden',
         }}
       >
-        Contact Innovative Learning Horizons in Saudi Arabia
+        Contact Innovative Learning Horizons
       </h1>
+      <p className="text-lg text-gray-700"
+      style={{
+          position: 'absolute',
+          fontSize: '1px',
+          opacity: 0,
+          height: 0,
+          overflow: 'hidden',}}>
+      We’d love to hear from you! Whether you have questions about our <strong>PMP, LEED, Revit, or Primavera</strong> courses, 
+      or want personalized training guidance, our team is here to help.
+    </p>
 
       <main>
   <Contact />

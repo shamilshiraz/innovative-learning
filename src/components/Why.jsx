@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
     and global career growth opportunities.  
     <br /><br />
     With a proven record of excellence in programs like <strong>PMP</strong>, 
-    <strong>LEED GA & AP</strong>, <strong>Revit Architecture</strong>,and  
+    <strong> LEED GA & AP</strong>, <strong> Revit Architecture</strong>,and  
     <strong> Primavera P6</strong>, ILH continues to empower professionals to achieve 
     success both locally and internationally.
           </p>

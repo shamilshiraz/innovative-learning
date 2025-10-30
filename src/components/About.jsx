@@ -32,12 +32,10 @@ export default function AboutPage() {
           className="text-center max-w-5xl mx-auto"
         >
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#213742] mb-6">
-            About Innovative Learning Horizon
+            About Innovative Learning Horizons
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Our vision is to empower individuals worldwide by providing globally
-            recognized certifications and practical training that transforms
-            careers and organizations.
+            Empowering professionals with world-class certifications and practical training across Saudi Arabia.
           </p>
 
           <div className="mt-10 relative w-full h-80 sm:h-[28rem] rounded-2xl overflow-hidden shadow-xl">
@@ -61,21 +59,15 @@ export default function AboutPage() {
               Who We Are
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Innovative Learning Horizon was established by professionals from
-              diverse industries, aiming to deliver holistic competency
-              development programs for students and professionals alike.
-              Learn more about our{" "}
-    <Link href="/about" className="text-[#b1976b] hover:underline">
-      mission and values
-    </Link>.
+              Innovative Learning Horizons (ILH) is a <strong>leading professional training institute in Saudi Arabia</strong>, 
+founded by industry experts passionate about bridging the gap between education and employability. 
+We specialize in delivering globally recognized certifications like <strong>PMP, LEED GA & AP, Revit Architecture, Primavera P6,</strong> 
+and more — helping professionals achieve their career goals through practical, results-driven learning.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We enhance knowledge and skills to empower learners to advance in
-              their chosen career paths. Explore our{" "}
-    <Link href="/courses" className="text-[#b1976b] hover:underline">
-      certification courses
-    </Link>{" "} certifications span Quality, Human
-              Resources, Supply Chain, Finance, and more.
+             Our programs are designed for engineers, architects, managers, and executives looking to upskill in fields like 
+<strong>Construction, Project Management, Sustainability, and Quality</strong>. 
+ At ILH, we combine theoretical depth with hands-on experience, ensuring every learner is ready for real-world success.
             </p>
 
           </div>
@@ -100,10 +92,9 @@ export default function AboutPage() {
             Our Core Mission
           </h2>
           <p className="text-lg sm:text-xl leading-relaxed font-light max-w-4xl mx-auto">
-            To empower learners with practical, industry-ready skills that
-            bridge the gap between traditional education and real-world
-            demands—creating engaging, flexible, and impactful learning
-            experiences.
+           Our mission is to <strong>empower learners with practical, industry-ready skills</strong> that align with the demands 
+of modern industries. We strive to bridge the gap between traditional education and evolving global standards, 
+creating learning experiences that are engaging, flexible, and impactful.  
           </p>
         </motion.section>
 
@@ -118,22 +109,22 @@ export default function AboutPage() {
               {
                 icon: <Lightbulb className="w-8 h-8 text-[#b1976b]" />,
                 title: "Holistic Learning",
-                text: "We combine academic principles with hands-on experience, ensuring learners gain both knowledge and practical skills.",
+                text: "Each course blends theoretical understanding with real-world applications for practical mastery.",
               },
               {
                 icon: <Handshake className="w-8 h-8 text-[#b1976b]" />,
                 title: "Industry Collaboration",
-                text: "Our programs are developed with industry experts to align with evolving market demands and trends.",
+                text: "Partnered with leading organizations to ensure globally recognized certification quality.",
               },
               {
                 icon: <CheckCircle className="w-8 h-8 text-[#b1976b]" />,
                 title: "Career-Driven Programs",
-                text: "We focus on competencies that boost employability and support long-term professional growth.",
+                text: "Focused on professional growth with courses like PMP, LEED, Primavera, and Revit Architecture.",
               },
               {
                 icon: <CheckCircle className="w-8 h-8 text-[#b1976b]" />,
                 title: "Certified & Recognized",
-                text: "Our certifications are globally recognized, providing credibility and real career value.",
+                text: "Our programs meet global standards and are recognized by major international bodies.",
               },
             ].map((card, index) => (
               <motion.div
