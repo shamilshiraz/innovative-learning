@@ -37,20 +37,24 @@ export default function WelcomeSection() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8 text-[#213742]">
             What would you like to learn today?
           </h2>
+
 <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
-  Welcome to Innovative Learning Horizons, where ambition meets opportunity and global standards
-  define success. We are honored to guide you on this professional learning journey that bridges
-  knowledge, skill, and {" "}
-    <Link href="/courses" className="text-[#b1976b] hover:underline">
-      industry relevance
-    </Link>.</p>
+  <strong>Welcome to Innovative Learning Horizons (ILH)</strong> — Saudi Arabia’s leading professional training institute where ambition meets opportunity and international certifications drive success.</p>
+
+
+<p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
+  At ILH, we specialize in globally recognized programs such as <strong><Link href="/courses/pmp" className="text-[#b1976b] hover:underline">
+PMP</Link></strong>, <strong><Link href="/courses/leed-ga-ap" className="text-[#b1976b] hover:underline">LEED GA & AP</Link></strong>, <strong><Link href="/courses/primavera" className="text-[#b1976b] hover:underline">
+Primavera P6</Link></strong>, <strong><Link href="/courses/revit" className="text-[#b1976b] hover:underline">Revit Architecture</Link></strong>, <strong><Link href="/courses/fidic" className="text-[#b1976b] hover:underline">
+FIDIC Red Book</Link></strong>, <strong><Link href="/courses/cpp" className="text-[#b1976b] hover:underline">AACEI CCP</Link><Link href="/courses/psp" className="text-[#b1976b] hover:underline">& PSP</Link></strong>, <strong><Link href="courses/cfps" className="text-[#b1976b] hover:underline">
+CFPS (NFPA)</Link></strong>,<strong><Link href="/courses/cfm" className="text-[#b1976b] hover:underline"> and CFM (IFMA)</Link></strong>.</p>
+
     
-    <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10"> Our community thrives on curiosity, innovation, and a
-  shared vision for excellence. Together, we aim to transform aspirations into achievements and
-  equip you with the confidence to lead, grow, and <Link href="/about" className="text-[#b1976b] hover:underline">
-      excel worldwide
-    </Link>.
-</p>
+    <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed mb-10">
+      Our mission is to help professionals gain industry-relevant skills and international credibility
+       through quality training and expert mentorship. Join our community of achievers
+        — learn, lead, and excel worldwide with <Link href="/courses/cpp" className="text-[#b1976b] hover:underline"> Innovative Learning Horizon.</Link></p>
+
 
 
 

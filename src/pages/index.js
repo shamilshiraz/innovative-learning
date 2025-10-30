@@ -14,15 +14,17 @@ const index = () => {
       <Head>
         <link rel="canonical" href="https://www.innovativelh.com/" />
         {/* 🔹 Basic SEO Meta Tags */}
-        <title>Professional Training Institute in Saudi Arabia | ILH</title>
+        <title>Best Training Institute in Saudi Arabia | ILH</title>
         <meta
           name="description"
-          content="Join Innovative Learning Horizons – a leading professional training institute in Saudi Arabia offering certified career courses for your success."
+          content="Build your career with ILH – Saudi Arabia’s trusted professional training institute offering PMP, LEED, Revit, Primavera & more international courses."
         />
         <meta
           name="keywords"
-          content="professional training institute Saudi Arabia, career training Al Khobar, certification courses KSA, skills development Saudi Arabia"
+          content="PMP course, LEED training, Revit Architecture, Primavera P6, professional courses Saudi Arabia, ILH institute"
         />
+        
+        <meta name="robots" content="index, follow" />
 
         {/* 🔹 Open Graph Tags (Social Sharing) */}
         <meta property="og:title" content="Professional Training Institute in Saudi Arabia | ILH" />
@@ -57,7 +59,7 @@ const index = () => {
         "@type": "EducationalOrganization",
         "name": "Innovative Learning Horizons (ILH)",
         "url": "https://www.innovativelh.com/",
-        "logo": "https://www.innovativelh.com/logo.png",
+        "logo": "https://www.innovativelh.com/ilh.png",
         "sameAs": [
           "https://www.facebook.com/innovativelh",
           "https://www.instagram.com/innovativelh",
@@ -102,7 +104,6 @@ const index = () => {
 
       </Head>
 
-      {/* ✅ Single Navbar (Fixes the double header issue) */}
 
       {/* ✅ Hidden but SEO & Audit-friendly H1 */}
       <h1
@@ -114,7 +115,7 @@ const index = () => {
           overflow: 'hidden'
         }}
       >
-        Professional Training Institute in Saudi Arabia
+        Empowering Professionals with World-Class Training in Saudi Arabia
       </h1>
 
 
