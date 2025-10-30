@@ -1,98 +1,98 @@
 [
   {
     "id": "revit",
-    "name": "Autodesk Revit Architecture",
-    "desc": "Master Building Information Modeling (BIM) for structural design, construction, and detailed documentation.",
+    "name": "Autodesk Revit Architecture Training in Saudi Arabia",
+    "desc": "Learn Building Information Modeling (BIM) with Revit the leading tool for architects and engineers. Master 3D design, documentation, and construction workflows.",
     "image": "/revit.png",
-    "longDesc": "Revit is the industry-leading Building Information Modeling (BIM) software essential for architects, structural engineers, and contractors. This comprehensive course covers everything from basic drafting and 3D modeling to advanced features like rendering, work-sharing, and construction documentation. You'll learn to create high-quality, coordinated, and consistent design models.",
+    "longDesc": "The Autodesk Revit Architecture course by ILH empowers architects and engineers to design, document, and visualize structures using BIM. This hands-on training covers 3D modeling, rendering, documentation, and collaboration workflows — preparing you for professional BIM certification in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1yJ90QrYzYaxdSpVQ-D96CHEIDCCWIoSw/view?usp=sharing"
   },
   {
     "id": "pmp",
-    "name": "Project Management Professional (PMP)",
-    "desc": "The globally recognized certification for project managers, covering predictive, agile, and hybrid methodologies.",
+    "name": "PMP Certification Training in Saudi Arabia",
+    "desc": "Get certified as a Project Management Professional (PMP). Learn predictive, agile, and hybrid project management with PMI-aligned training.",
     "image": "/pmp.png",
-    "longDesc": "The PMP certification is highly sought after by organizations worldwide. Our course is aligned with the latest Project Management Body of Knowledge (PMBOK®) Guide and focuses on the three performance domains: People, Process, and Business Environment. You will gain the critical skills and knowledge needed to pass the PMP exam and manage complex projects successfully.",
+    "longDesc": "ILH’s PMP Certification course prepares you for success in the globally recognized Project Management Professional exam. Our PMI-approved program covers leadership, risk management, scheduling, and cost control to help professionals deliver high-value projects and earn global credibility.",
     "brochureLink": "https://drive.google.com/file/d/1yMkd1pLTzMFYzWRmaNnLcVWj1cT7fWH_/view?usp=sharing"
   },
   {
     "id": "leed-ga-ap",
-    "name": "LEED Green Associate & AP",
-    "desc": "Become certified in sustainable building practices, covering design, construction, and operation of green buildings.",
+    "name": "LEED GA & AP Certification Course in Saudi Arabia",
+    "desc": "Become a certified expert in sustainable design with ILH’s LEED Green Associate and Accredited Professional (AP) training.",
     "image": "/leed.png",
-    "longDesc": "LEED (Leadership in Energy and Environmental Design) is the most widely used green building rating system in the world. This combined course prepares you first for the LEED Green Associate (GA) exam, covering basic concepts, and then the more advanced LEED Accredited Professional (AP) exam, focusing on a specific specialization (e.g., Building Design + Construction). Master the principles of sustainability and earn your credentials.",
+    "longDesc": "ILH’s LEED GA & AP course helps professionals master green building principles and earn international LEED credentials. The training covers sustainability, environmental design, and exam preparation for both GA and AP levels — essential for architects, engineers, and sustainability leaders in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1YOnSPiGqrSzHcJR7YGZdwo06s2iX-B35/view?usp=sharing"
   },
   {
     "id": "primavera",
-    "name": "Primavera P6 Professional Project Management",
-    "desc": "Master powerful project scheduling, resource management, and risk analysis using the Primavera P6 software.",
+    "name": "Primavera P6 Professional Project Management Course in Saudi Arabia",
+    "desc": "Master Oracle Primavera P6 software for scheduling, resource management, and performance tracking in large-scale projects.",
     "image": "/p6.png",
-    "longDesc": "Primavera P6 is the recognized standard for high-performance project management in large-scale construction, engineering, and energy industries. This course teaches you critical techniques for creating a Work Breakdown Structure (WBS), managing resource allocation, monitoring progress, and forecasting project completion dates to ensure projects are delivered on time and budget.",
+    "longDesc": "ILH’s Primavera P6 training in Saudi Arabia provides hands-on experience in project scheduling and control. Learn how to plan, manage, and execute complex engineering and construction projects using Primavera’s advanced tools for resource allocation, progress monitoring, and performance tracking. Gain skills essential for professional project managers.",
     "brochureLink": "https://drive.google.com/file/d/1BH0jk2zJZRsD7hgD-vxw1QHS27AazJ7T/view?usp=sharing"
   },
   {
     "id": "fidic",
-    "name": "FIDIC Contracts Masterclass",
-    "desc": "Understand the rights and obligations under the widely used FIDIC standard forms of contract for international construction projects.",
+    "name": "FIDIC Contracts Masterclass in Saudi Arabia",
+    "desc": "Understand the FIDIC standard forms of contract and manage international construction projects effectively.",
     "image": "/fidic.png",
-    "longDesc": "FIDIC (Fédération Internationale Des Ingénieurs-Conseils) contracts are essential for anyone working on cross-border construction or engineering projects. This course provides an in-depth review of the Red, Yellow, and Silver books, covering topics like claims, dispute resolution (DAB), risk allocation, and practical application scenarios to manage contractual risks effectively.",
+    "longDesc": "ILH’s FIDIC Contracts Masterclass provides comprehensive insights into FIDIC’s Red, Yellow, and Silver Books. Learn about contract obligations, claims, dispute resolution (DAB), and risk allocation for international construction projects. Perfect for engineers, contract managers, and legal professionals working on global projects in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1pzP1LTDXC28C-E-kgQafsnRApdxQTkPK/view?usp=drive_link"
   },
   {
     "id": "cpp",
-    "name": "Certified Pricing Professional (CPP)",
-    "desc": "Develop core skills in strategic pricing methods, cost analysis, and revenue optimization to maximize business profitability.",
+    "name": "Certified Pricing Professional (CPP) Course in Saudi Arabia",
+    "desc": "Develop strategic pricing and revenue management skills to maximize profitability across markets and industries.",
     "image": "/cpp.png",
-    "longDesc": "This certification focuses on the complex intersection of finance, marketing, and sales, providing a structured approach to setting and managing prices. You will learn various pricing models, elasticity analysis, competitive benchmarking, and strategies to align pricing decisions with overall business objectives and market demands.",
+    "longDesc": "The Certified Pricing Professional (CPP) program at ILH focuses on advanced pricing strategies, cost analysis, and value-based selling. Learn to build competitive pricing models, conduct market benchmarking, and implement data-driven pricing decisions to enhance profitability for your business in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1EC_aOtKKbIpmwq8JaLC-Kza6Swd_nOG6/view?usp=sharing"
   },
   {
     "id": "iso",
-    "name": "ISO 9001 Lead Auditor / Implementer",
-    "desc": "Gain expertise in auditing or implementing Quality Management Systems (QMS) based on the globally recognized ISO 9001 standard.",
+    "name": "ISO 9001 Lead Auditor & Implementer Course in Saudi Arabia",
+    "desc": "Gain expertise in Quality Management Systems (QMS) as an ISO 9001 Lead Auditor or Implementer.",
     "image": "/iso.png",
-    "longDesc": "This course covers the requirements of the ISO 9001:2015 standard in depth. Whether you choose the Lead Auditor stream (focused on external auditing) or the Lead Implementer stream (focused on establishing a QMS), you will learn how to plan, conduct, report, and follow-up on an audit, or how to design and integrate the QMS framework within an organization.",
+    "longDesc": "ILH’s ISO 9001 Lead Auditor / Implementer course helps professionals build strong auditing and implementation skills in Quality Management Systems (QMS). Learn to conduct audits, design compliance frameworks, and implement continuous improvement strategies to meet ISO 9001:2015 standards within organizations in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1b0fWPpUsZjxaI2-rB9v6adjUP69QpVQZ/view?usp=drive_link"
   },
   {
     "id": "psp",
-    "name": "Planning and Scheduling Professional (PSP)",
-    "desc": "AACE International certification focusing on the critical elements of project scheduling, data analysis, and status reporting.",
+    "name": "Planning and Scheduling Professional (PSP) Course in Saudi Arabia",
+    "desc": "AACE International’s PSP certification focusing on advanced project scheduling, analytics, and reporting.",
     "image": "/psp.png",
-    "longDesc": "The PSP certification validates advanced knowledge in planning and scheduling, including developing, analyzing, and maintaining project schedules. The curriculum covers Schedule Data Flow, Statistical Analysis, and Schedule Forensics, ensuring you can create and defend legally sound, realistic, and resource-leveled project timelines.",
+    "longDesc": "ILH’s PSP Certification course trains professionals in advanced project planning and scheduling techniques. Covering Schedule Data Flow, Forensic Analysis, and Critical Path Methods, this program ensures you can build, analyze, and manage realistic project timelines while earning the globally recognized AACE PSP certification in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1czwBcb8DnzPKeVE2-DzVYtWOiwwkrbCi/view?usp=drive_link"
   },
   {
     "id": "cfm",
-    "name": "Certified Facility Manager (CFM)",
-    "desc": "The globally recognized designation for facility management leaders, covering operations, finance, and leadership.",
+    "name": "Certified Facility Manager (CFM) Training in Saudi Arabia",
+    "desc": "Prepare for the globally recognized IFMA CFM certification to advance your facility management career.",
     "image": "/cfm.png",
-    "longDesc": "The CFM program is designed to elevate facility managers beyond operational roles, focusing on strategic and financial management. The course covers the 11 competencies of facility management, including Quality Assessment, Leadership, Communication, Technology Management, and Environmental Stewardship, preparing candidates for the IFMA CFM exam.",
+    "longDesc": "ILH’s CFM training helps professionals gain the knowledge and skills required to pass the IFMA Certified Facility Manager exam. Covering 11 key competencies such as Operations, Finance, Leadership, and Technology Management, this program equips facility managers in Saudi Arabia to manage buildings strategically and efficiently.",
     "brochureLink": "https://drive.google.com/file/d/1Gz9KLHn7g23yI87sW2QDzt0DnsrBShqJ/view?usp=drive_link"
   },
   {
     "id": "ccp",
-    "name": "Certified Cost Professional (CCP)",
-    "desc": "AACE certification demonstrating expertise in total cost management, estimation, and earned value analysis.",
+    "name": "Certified Cost Professional (CCP) Course in Saudi Arabia",
+    "desc": "Earn your AACE CCP certification and master cost estimation, control, and earned value management.",
     "image": "/ccp.png",
-    "longDesc": "The CCP certification is vital for professionals involved in project cost control and engineering. The curriculum includes cost estimating, planning and scheduling, progress and cost control, and profitability analysis. You will master techniques like Earned Value Management (EVM) to forecast project costs accurately and ensure budgetary compliance.",
+    "longDesc": "TThe Certified Cost Professional (CCP) course at ILH provides in-depth training in total cost management, planning, and earned value analysis. Learn advanced cost estimation, forecasting, and project performance evaluation aligned with AACE International standards — essential for cost engineers and project controllers in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1EC_aOtKKbIpmwq8JaLC-Kza6Swd_nOG6/view?usp=drive_link"
   },
   {
     "id": "ielts",
-    "name": "IELTS Preparation Course",
-    "desc": "Comprehensive training to achieve a high band score in the International English Language Testing System (IELTS) exam.",
+    "name": "IELTS Preparation Course in Saudi Arabia",
+    "desc": "Comprehensive training for high IELTS band scores — covering Listening, Reading, Writing, and Speaking modules.",
     "image": "/ielts.png",
-    "longDesc": "This structured preparation course covers all four modules of the IELTS exam: Listening, Reading, Writing, and Speaking. Our expert instructors provide focused practice, test-taking strategies, and personalized feedback designed to help academic and general training candidates achieve the band score required for immigration or university admission.",
+    "longDesc": "ILH’s IELTS course provides structured preparation for academic and general training candidates. Learn effective strategies for all four sections of the IELTS exam — Listening, Reading, Writing, and Speaking. This course is perfect for students and professionals in Saudi Arabia aiming for immigration, education, or career opportunities abroad.",
     "brochureLink": "https://drive.google.com/file/d/1pculpF8ADswH9kDg6Iu6N_MbwxmICgp-/view?usp=drive_link"
   },
   {
     "id": "cfps",
-    "name": "Certified Fire Protection Specialist (CFPS)",
-    "desc": "NFPA certification covering fire safety, prevention systems, fire code application, and emergency planning.",
+    "name": "Certified Fire Protection Specialist (CFPS) Training in Saudi Arabia",
+    "desc": "NFPA-recognized certification in fire safety, prevention systems, and emergency planning for safety professionals.",
     "image": "/cfps.png",
-    "longDesc": "The CFPS designation validates your knowledge in fire protection, prevention, and suppression systems. This course, based on NFPA standards, provides a foundation in risk assessment, fire behavior, building construction safety, detection and alarm systems, and emergency response planning, crucial for safety and facility professionals.",
+    "longDesc": "The CFPS certification by ILH equips professionals with knowledge in fire protection, suppression systems, and fire code application. Based on NFPA standards, this course covers fire behavior, building construction safety, detection systems, and emergency planning — crucial for facility and safety professionals in Saudi Arabia.",
     "brochureLink": "https://drive.google.com/file/d/1TjnhK65Dog8e9huBe65KC3iknFAXmpRi/view?usp=drive_link"
   }
 ]
