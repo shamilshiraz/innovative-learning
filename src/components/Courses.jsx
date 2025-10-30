@@ -73,8 +73,17 @@ export default function Courses() {
                 </div>
               </Link>
             </motion.div>
+            
           ))}
         </motion.div>
+        <div className="flex justify-center mt-10 mb-6">
+  <a
+    href="/courses"
+    className="bg-[#1E293B] text-white px-8 py-3 rounded-xl text-lg font-semibold hover:bg-[#0F172A] transition"
+  >
+    View More Courses →
+  </a>
+</div>
       </div>
     </div>
   );

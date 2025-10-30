@@ -53,12 +53,19 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl font-extrabold text-[#213742] mb-6">
-            Why Choose Our Academy?
+            Why Choose Innovative Learning Horizons?
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed">
-            At Innovative Learning Horizons, we are dedicated to providing an unparalleled educational experience.
-            Our commitment to excellence, cutting-edge curriculum, and supportive community ensure that every professional
-            can achieve their highest potential. We focus on practical skills, industry relevance, and fostering a passion for lifelong learning.
+            At <strong>Innovative Learning Horizons (ILH)</strong>, we’re proud to be one of the 
+    <strong> leading professional training institutes in Saudi Arabia</strong>. 
+    Our commitment to quality education, internationally recognized certifications, 
+    and expert trainers ensures every learner gains <strong>industry-relevant skills </strong> 
+    and global career growth opportunities.  
+    <br /><br />
+    With a proven record of excellence in programs like <strong>PMP</strong>, 
+    <strong>LEED GA & AP</strong>, <strong>Revit Architecture</strong>,and  
+    <strong> Primavera P6</strong>, ILH continues to empower professionals to achieve 
+    success both locally and internationally.
           </p>
 
         </motion.div>
