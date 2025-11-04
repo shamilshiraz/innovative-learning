@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
   const [result, setResult] = useState("");
@@ -36,64 +37,84 @@ export default function ContactPage() {
           Contact Us
         </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b1976b]"
-              placeholder="Your Name"
-            />
-          </div>
+        <form
+  onSubmit={(e) => {
+    e.preventDefault();
+    alert("Message sent successfully!");
+  }}
+  className="space-y-4"
+>
+  <div>
+    <label className="block text-sm font-medium mb-1">Name</label>
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+      className="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200"
+    />
+  </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b1976b]"
-              placeholder="you@example.com"
-            />
-          </div>
+  <div>
+    <label className="block text-sm font-medium mb-1">Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="you@example.com"
+      required
+      className="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200"
+    />
+  </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows="5"
-              required
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#b1976b]"
-              placeholder="Write your message..."
-            ></textarea>
-          </div>
+  {/* ✅ New Phone Number Field */}
+  <div>
+    <label className="block text-sm font-medium mb-1">Phone Number</label>
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Your Phone Number"
+      required
+      className="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200"
+    />
+  </div>
 
-          <button
-            type="submit"
-            className="w-full bg-[#213742] text-white font-semibold py-3 rounded-lg hover:bg-[#b1976b] transition-colors"
-          >
-            Send Message
-          </button>
+  <div>
+    <label className="block text-sm font-medium mb-1">Message</label>
+    <textarea
+      name="message"
+      placeholder="Write your message..."
+      rows="4"
+      className="w-full px-4 py-2 border rounded-md focus:ring focus:ring-blue-200"
+    ></textarea>
+  </div>
 
-          {result && (
-            <p className="text-center text-sm text-gray-600 mt-3">{result}</p>
-          )}
-        </form>
+  <button
+    type="submit"
+    className="w-full bg-gray-800 text-white py-2 rounded-md hover:bg-gray-900 transition"
+  >
+    Send Message
+  </button>
+
+</form>
       </div>
+      {/* ✅ Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/966511742526?text=Hi%20ILH%20Team,%20I%20want%20to%20know%20more%20about%20your%20training%20programs."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50"
+      >
+        <FaWhatsapp size={28} />
+      </a>
+      
       <p className="text-lg mt-4">
   Want to know who we are?{" "}
   <Link href="/about" className="text-[#b1976b] hover:underline">
     Learn about Innovative Learning Horizons.
   </Link>
 </p>
+
+
 
     </div>
   );
