@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { CheckCircle, BookOpen, Layers, HardHat, Briefcase, Building, FileText, Hammer } from "lucide-react";
+import { BookOpen, Layers, Briefcase, Building, FileText, Hammer, HardHat, CheckCircle } from "lucide-react";
 
 export default function RevitOffer() {
   return (
@@ -8,7 +8,7 @@ export default function RevitOffer() {
         <title>Revit & BIM Certification | Innovative Learning Horizons</title>
         <meta
           name="description"
-          content="Master Autodesk Revit & BIM with ILH. Learn Architecture, Structure & MEP design — hands-on projects and job assistance in India, Oman & Saudi Arabia."
+          content="Master Autodesk Revit & BIM with ILH. Learn Architecture, Structure & MEP design — flexible online and classroom training in Al Khobar, Saudi Arabia."
         />
         <link rel="canonical" href="https://www.innovativelh.com/revit-offer" />
       </Head>
@@ -19,7 +19,7 @@ export default function RevitOffer() {
           className="relative text-center py-24 bg-cover bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')",
+              "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e')",
           }}
         >
           <div className="max-w-3xl mx-auto text-white px-6">
@@ -27,7 +27,7 @@ export default function RevitOffer() {
               Become a Certified <span className="text-red-500">Revit & BIM Professional</span>
             </h1>
             <p className="text-lg md:text-xl mb-6 text-gray-200">
-              Master Autodesk Revit for Architecture, Structure & MEP — and step into global AEC careers.
+              Master Autodesk Revit for Architecture, Structure & MEP — guided by industry experts with real-world projects.
             </p>
             <a
               href="#register"
@@ -39,7 +39,7 @@ export default function RevitOffer() {
             {/* Trust Signals */}
             <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm md:text-base text-gray-200">
               <div>✅ 1000+ Students Trained</div>
-              <div>✅ 95% Placement Rate</div>
+              <div>✅ 95% Student Satisfaction</div>
               <div>✅ Globally Recognized Certification</div>
             </div>
           </div>
@@ -58,12 +58,12 @@ export default function RevitOffer() {
               {
                 icon: Layers,
                 title: "Hands-On Learning",
-                desc: "Work on real-world projects using Autodesk Revit, Navisworks & BIM 360.",
+                desc: "Work on practical Revit & BIM projects with Autodesk tools like Navisworks & BIM 360.",
               },
               {
                 icon: Briefcase,
-                title: "Placement Support",
-                desc: "Guaranteed job assistance in India, Oman & Saudi Arabia.",
+                title: "Career Support",
+                desc: "We provide referral support to reputed designing companies to help you kickstart your career.",
               },
             ].map((item, i) => (
               <div
@@ -88,7 +88,7 @@ export default function RevitOffer() {
               { icon: HardHat, text: "Revit MEP" },
               { icon: Layers, text: "BIM Coordination" },
               { icon: FileText, text: "Clash Detection (Navisworks)" },
-              { icon: CheckCircle, text: "4D & 5D BIM" },
+              { icon: CheckCircle, text: "4D & 5D BIM (Time & Cost)" },
               { icon: FileText, text: "Construction Documentation" },
               { icon: Building, text: "Rendering & Visualization" },
             ].map(({ icon: Icon, text }, i) => (
@@ -110,13 +110,13 @@ export default function RevitOffer() {
             {[
               {
                 quote:
-                  "ILH helped me land my first job as a BIM Modeler in Dubai within 2 months of completing the course!",
+                  "ILH helped me strengthen my Revit skills and connect with professional design companies in the Gulf.",
                 name: "Ahmed R.",
                 role: "Structural Engineer",
               },
               {
                 quote:
-                  "The Revit course was 100% practical. I now handle MEP projects confidently using BIM workflows.",
+                  "The training was completely practical — now I can confidently manage BIM coordination tasks in my firm.",
                 name: "Fatima K.",
                 role: "MEP Designer",
               },
@@ -131,80 +131,37 @@ export default function RevitOffer() {
           </div>
         </section>
 
-        {/* CAREER PATH */}
-        <section className="py-20 bg-gray-50 text-center">
-          <h2 className="text-3xl font-bold mb-8">Step into High-Growth AEC Careers</h2>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 px-6">
-            <div className="text-left space-y-2">
-              <p>🏗 Revit Modeler</p>
-              <p>👷‍♂️ BIM Coordinator / Manager</p>
-              <p>💡 MEP Engineer</p>
-              <p>🎨 Interior Designer</p>
-            </div>
-            <table className="w-full bg-white border border-gray-200 rounded-lg overflow-hidden text-sm">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="p-3 text-left">Role</th>
-                  <th className="p-3 text-left">Average Salary (INR)</th>
-                  <th className="p-3 text-left">Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-3">Revit Modeler</td>
-                  <td className="p-3">₹25,000 – ₹45,000</td>
-                  <td className="p-3">India</td>
-                </tr>
-                <tr>
-                  <td className="p-3">BIM Coordinator</td>
-                  <td className="p-3">₹60,000 – ₹1,20,000</td>
-                  <td className="p-3">Gulf Countries</td>
-                </tr>
-                <tr>
-                  <td className="p-3">MEP Engineer</td>
-                  <td className="p-3">₹40,000 – ₹90,000</td>
-                  <td className="p-3">Global</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
         {/* FEES SECTION */}
-        <section className="py-20 text-center bg-white">
+        <section className="py-20 text-center bg-gray-50">
           <h2 className="text-3xl font-bold mb-8">Simple, Transparent Learning</h2>
-          <div className="max-w-3xl mx-auto bg-gray-50 rounded-2xl shadow p-8">
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow p-8">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b text-gray-700">
                   <th className="p-3">Duration</th>
                   <th className="p-3">Mode</th>
-                  <th className="p-3">Fee (INR)</th>
+                  <th className="p-3">Fee</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="p-3">4 Months</td>
-                  <td className="p-3">Classroom / Online</td>
-                  <td className="p-3 font-semibold">₹45,000</td>
-                </tr>
                 <tr>
-                  <td className="p-3">6 Months</td>
-                  <td className="p-3">Advanced BIM</td>
-                  <td className="p-3 font-semibold">₹65,000</td>
+                  <td className="p-3">35 – 40 Hours</td>
+                  <td className="p-3">Classroom (Al Khobar) / Online</td>
+                  <td className="p-3 font-semibold">2300 SAR / $615</td>
                 </tr>
               </tbody>
             </table>
+
             <div className="mt-6 text-gray-600 space-y-1 text-sm">
-              <p>✅ Free Accommodation (for outstation students)</p>
-              <p>✅ EMI Options Available</p>
-              <p>✅ Certification Included</p>
+              <p>✅ Globally Recognized Certification</p>
+              <p>✅ Best Fees Structure</p>
+              <p>✅ Referral Support to Designing Companies</p>
             </div>
           </div>
         </section>
 
-        {/* REGISTRATION FORM */}
-        <section id="register" className="py-20 bg-gray-50 text-center">
+        {/* REGISTRATION CTA */}
+        <section id="register" className="py-20 bg-white text-center">
           <h2 className="text-3xl font-bold mb-8">Get Course Details on WhatsApp</h2>
           <a
             href="https://wa.me/966511742526?text=Hi%20ILH%20Team,%20I%20want%20to%20enroll%20for%20the%20Revit%20BIM%20course."
@@ -218,7 +175,7 @@ export default function RevitOffer() {
 
         {/* FOOTER */}
         <footer className="bg-gray-900 text-gray-400 py-10 text-center text-sm">
-          <p>📍 ILH, Calicut | 📞 +966 51 174 2526 | ✉️ info@innovativelh.com</p>
+          <p>📍 ILH, Al Khobar, Saudi Arabia | 📞 +966 51 174 2526 | ✉️ info@innovativelh.com</p>
           <p className="mt-3">
             <a href="https://www.innovativelh.com" className="text-red-400 hover:text-red-500">
               www.innovativelh.com
