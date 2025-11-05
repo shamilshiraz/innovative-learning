@@ -2,6 +2,16 @@ import Head from "next/head";
 import { BookOpen, Layers, Briefcase, Building, FileText, Hammer, HardHat, CheckCircle } from "lucide-react";
 
 export default function RevitOffer() {
+  // ✅ Track WhatsApp Click as a Meta Pixel Lead Event
+  const handleWhatsAppClick = () => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead", {
+        content_name: "Revit Offer Page - WhatsApp Lead",
+      });
+      console.log("Meta Pixel Lead event fired");
+    }
+  };
+
   return (
     <>
       <Head>
@@ -167,6 +177,7 @@ export default function RevitOffer() {
             href="https://wa.me/966511742526?text=Hi%20ILH%20Team,%20I%20want%20to%20enroll%20for%20the%20Revit%20BIM%20course."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleWhatsAppClick} // ✅ Fire Meta Pixel event on click
             className="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg shadow-md font-semibold transition"
           >
             🚀 Chat with Course Advisor
