@@ -180,7 +180,7 @@ creating learning experiences that are engaging, flexible, and impactful.
           </div>
 
           <p className="text-sm text-gray-500 mt-3">
-            Located in Al Khobar, Saudi Arabia (Postal Code: 34627)
+            Located in Al Khobar, Saudi Arabia (Postal Code: 34627).
           </p>
         
         </motion.section>
