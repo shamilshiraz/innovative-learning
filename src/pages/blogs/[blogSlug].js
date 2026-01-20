@@ -15,12 +15,16 @@ export default function BlogDetailPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!blogSlug) return; // wait for router to be ready
+    if (!blogSlug) return;
+
+    const slug = blogSlug.toLowerCase();
 
     async function fetchBlog() {
       try {
         const res = await fetch(
-          `https://competent-dinosaurs-c6df949cc3.strapiapp.com/api/blogs?filters[slug][$eq]=${blogSlug}&populate=*`
+          `https://competent-dinosaurs-c6df949cc3.strapiapp.com/api/blogs?filters[slug][$eq]=${encodeURIComponent(
+            slug
+          )}&populate=*`
         );
 
         if (!res.ok) throw new Error("Failed to fetch blog");
@@ -28,31 +32,36 @@ export default function BlogDetailPage() {
         const data = await res.json();
         const item = data?.data?.[0];
 
-        if (!item) {
+        if (!item || !item.attributes) {
           setBlog(null);
           return;
         }
 
+        const attrs = item.attributes;
+
+        const imageData = attrs.image?.data?.attributes;
+
         const imageUrl =
-          item.image?.formats?.medium?.url ||
-          item.image?.formats?.small?.url ||
-          item.image?.url ||
+          imageData?.formats?.medium?.url ||
+          imageData?.formats?.small?.url ||
+          imageData?.url ||
           null;
 
         const fullImageUrl =
           imageUrl && imageUrl.startsWith("http")
             ? imageUrl
             : imageUrl
-            ? `${process.env.NEXT_PUBLIC_STRAPI_URL || ""}${imageUrl}`
+            ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${imageUrl}`
             : null;
 
         setBlog({
           id: item.id,
-          head: item.head || "Untitled",
-          description: item.description || "",
-          date: item.date || "",
+          head: attrs.head || "Untitled",
+          description: attrs.description || "",
+          date: attrs.date || "",
           image: fullImageUrl,
-          content: item.content || "",
+          content: attrs.content || "",
+          slug,
         });
       } catch (error) {
         console.error("Error fetching blog:", error);
@@ -65,10 +74,11 @@ export default function BlogDetailPage() {
     fetchBlog();
   }, [blogSlug]);
 
-  if (loading)
+  if (loading) {
     return <div className="p-20 text-center">Loading article...</div>;
+  }
 
-  if (!blog)
+  if (!blog) {
     return (
       <div className="p-20 text-center min-h-screen">
         <h1 className="text-4xl font-bold text-red-600">
@@ -82,13 +92,17 @@ export default function BlogDetailPage() {
         </Link>
       </div>
     );
+  }
 
   return (
     <>
-      {/* ✅ Dynamic SEO & Open Graph Tags */}
+      {/* SEO Meta Tags */}
       <Head>
         <title>{`${blog.head} | ILH Blog`}</title>
-        <meta name="description" content={blog.description.slice(0, 160)} />
+        <meta
+          name="description"
+          content={blog.description.slice(0, 160)}
+        />
         <meta
           name="keywords"
           content={`${blog.head}, ILH Blog, Training Insights, Saudi Arabia`}
@@ -96,15 +110,18 @@ export default function BlogDetailPage() {
 
         {/* Open Graph */}
         <meta property="og:title" content={`${blog.head} | ILH Blog`} />
-        <meta property="og:description" content={blog.description.slice(0, 160)} />
+        <meta
+          property="og:description"
+          content={blog.description.slice(0, 160)}
+        />
         {blog.image && <meta property="og:image" content={blog.image} />}
         <meta
           property="og:url"
-          content={`https://www.innovativelh.com/blogs/${blogSlug}`}
+          content={`https://www.innovativelh.com/blogs/${blog.slug}`}
         />
         <meta property="og:type" content="article" />
 
-        {/* Twitter Card */}
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${blog.head} | ILH Blog`} />
         <meta
@@ -113,13 +130,13 @@ export default function BlogDetailPage() {
         />
         {blog.image && <meta name="twitter:image" content={blog.image} />}
 
-        {/* Canonical URL */}
+        {/* Canonical */}
         <link
           rel="canonical"
-          href={`https://www.innovativelh.com/blogs/${blogSlug}`}
+          href={`https://www.innovativelh.com/blogs/${blog.slug}`}
         />
 
-        {/* ✅ JSON-LD Structured Data for BlogPost */}
+        {/* JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -144,14 +161,14 @@ export default function BlogDetailPage() {
               description: blog.description,
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": `https://www.innovativelh.com/blogs/${blogSlug}`,
+                "@id": `https://www.innovativelh.com/blogs/${blog.slug}`,
               },
             }),
           }}
         />
       </Head>
 
-      {/* ✅ Blog Content */}
+      {/* Page Content */}
       <main className="py-20 px-8 bg-white min-h-screen">
         <div className="max-w-4xl mx-auto">
           <Link
@@ -161,9 +178,10 @@ export default function BlogDetailPage() {
             &larr; Back to Blog Index
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#213742] mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#213742] mb-4">
             {blog.head}
           </h1>
+
           <p className="text-gray-500 mb-10 text-lg">
             Published: {blog.date || "Date not available"}
           </p>
@@ -174,11 +192,9 @@ export default function BlogDetailPage() {
                 src={blog.image}
                 alt={blog.head}
                 fill
-                loading="lazy"
-                placeholder="blur"
-                blurDataURL="/blur-placeholder.webp"
                 sizes="(max-width: 768px) 100vw, 75vw"
                 className="object-cover"
+                priority
               />
             </div>
           )}
@@ -194,19 +210,7 @@ export default function BlogDetailPage() {
                 }}
               />
             )}
-
-            <p className="mt-8 italic text-gray-500">
-              [This section can be expanded with more article content from
-              Strapi.]
-            </p>
           </article>
-          <section className="mt-16 border-t pt-10">
-  <h2 className="text-2xl font-bold text-[#213742] mb-6">
-    Recommended Articles
-  </h2>
-  {/* Map 3 related blogs from Strapi here */}
-</section>
-
         </div>
       </main>
     </>
