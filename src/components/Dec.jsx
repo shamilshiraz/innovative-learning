@@ -40,7 +40,7 @@ const decCourses = [
 // --- TAILWIND CLASSES ---
 
 const thClasses = "px-4 py-3 text-left font-semibold text-gray-900 uppercase tracking-wider bg-yellow-600/80";
-const tdClasses = "px-4 py-3 whitespace-nowrap text-sm text-gray-100 border-b border-yellow-800";
+const tdClasses = "px-4 py-3 whitespace-nowrap text-sm text-white border-b border-yellow-800";
 const headerClasses = "text-3xl font-serif text-gray-800 mb-6 border-b-2 border-yellow-600 pb-2";
 const monthHeaderClasses = "text-2xl font-semibold text-gray-700 mt-8 mb-4";
 const tableContainerClasses = "shadow-2xl overflow-x-auto rounded-lg border-4 border-yellow-800";
