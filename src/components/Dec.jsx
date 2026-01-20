@@ -4,6 +4,12 @@ import React from 'react';
 
 // --- CONSOLIDATED DATA ---
 
+const febCourses = [
+  { course: " FIDIC", startDate: "18-Feb-26", time: " 8.30PM - 11.30PM", frequency: "Wed/Sat/Mon - 30 Hours" },
+  { course: " CFPS- - NFPA Standards", startDate: "23-Feb-26", time: " 8.30PM - 11.30PM", frequency: "Mon/Wed/ Sat - 36 Hours" },
+  { course: " REVIT", startDate: "25-Feb-26", time: " 8.30PM - 11.30PM", frequency: "Wed/Mon/Sat - 30 Hours" },
+];
+
 const novCourses = [
   { course: "PMP-PMI US", startDate: "28-Nov-2025", time: "2:00 PM - 7:00 PM", frequency: "Fridays – 40 Hours" },
   { course: "PMP-PMI US", startDate: "21-Nov-2025", time: "7:30 AM – 11:30 AM", frequency: "Fridays – 40 Hours" },
@@ -82,19 +88,15 @@ const Schedule = () => {
     <section className="p-4 sm:p-8 lg:p-12 bg-gray-50">
       <h2 className={headerClasses}>Specialized Courses Schedule</h2>
 
-      {/* November Section (nv) */}
+      {/* Feb Section (nv) */}
       <div id="schedule-nv" className="month-schedule">
-        <h3 className={monthHeaderClasses}>November 2025</h3>
-        {renderCourseTable(novCourses)}
+        <h3 className={monthHeaderClasses}>February 2026</h3>
+        {renderCourseTable(febCourses)}
       </div>
 
       <div className="my-8 border-t border-gray-300"></div>
 
-      {/* December Section (dec) */}
-      <div id="schedule-dec" className="month-schedule">
-        <h3 className={monthHeaderClasses}>December 2025</h3>
-        {renderCourseTable(decCourses)}
-      </div>
+     
     </section>
   );
 };
