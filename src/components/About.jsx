@@ -32,7 +32,7 @@ export default function AboutPage() {
           className="text-center max-w-5xl mx-auto"
         >
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#213742] mb-6">
-            About Innovative Learning Horizons - 02
+            About Innovative Learning Horizons
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Empowering professionals with world-class certifications and practical training across Saudi Arabia.
