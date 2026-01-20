@@ -40,7 +40,7 @@ export default function AboutPage() {
 
           <div className="mt-10 relative w-full h-80 sm:h-[28rem] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/landing.jpg"
+              src="/abt.jpeg"
               alt="Innovative Learning Horizon Team"
               fill
               sizes="100vw"
@@ -73,7 +73,7 @@ and more — helping professionals achieve their career goals through practical,
           </div>
           <div className="relative order-1 md:order-2 w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/abt.jpeg"
+              src="/students.jpg"
               alt="Professionals collaborating in a course"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
