@@ -73,7 +73,7 @@ and more — helping professionals achieve their career goals through practical,
           </div>
           <div className="relative order-1 md:order-2 w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/students.jpg"
+              src="/abt.jpeg"
               alt="Professionals collaborating in a course"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
