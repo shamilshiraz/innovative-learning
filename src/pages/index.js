@@ -5,6 +5,7 @@ import WelcomeSection from '@/components/Intro'
 import LandingSection from '@/components/Landing'
 import Navbar from '@/components/Navbar'
 import WhyChooseUs from '@/components/Why'
+import WhyChooseUs from '@/components/Testimonials'
 import React from 'react'
 import Head from "next/head";
 
@@ -125,6 +126,7 @@ const index = () => {
   <Courses />
   <WhyChooseUs />
   <Schedule/>
+          <Testimonials />
   <Blogs />
 </main>
 
