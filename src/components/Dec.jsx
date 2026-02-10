@@ -10,6 +10,22 @@ const febCourses = [
   { course: " REVIT", startDate: "25-Feb-26", time: " 8.30PM - 11.30PM", frequency: "Wed/Mon/Sat - 30 Hours" },
 ];
 
+const marchCourses = [
+  { course: " PMP-PMI US", startDate: "30-Mar-2026", time: " 7:00 PM-10:00 PM", frequency: "Mon, Wed, Sat. – 40 Hours" },
+  { course: " PMP-PMI US", startDate: "27-Mar-2026", time: " 7:30 AM–11:30 AM", frequency: "Fridays Only – 40 Hours" },
+  { course: " CFM", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 40 Hours" },
+  { course: " CFPS", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 35 Hours" },
+  { course: " ISO 9001-2015 (Internal & External)", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 25 Hours" },
+];
+
+const aprCourses = [
+  { course: " PMP-PMI US", startDate: "20-Apr-2026", time: " 7:00 PM-10:00 PM", frequency: "Mon, Wed, Sat. – 40 Hours" },
+  { course: " CCP", startDate: "17-Apr-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 40 Hours" },
+  { course: " PRIMAVERA (P6)", startDate: "17-Apr-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 35 Hours" },
+  { course: " RMP", startDate: "19-Apr-2026", time: " 7:00 PM – 10:00 PM", frequency: "Sun, Tue, Thurs – 30 Hours" },
+  { course: " ISO 45001 (Internal & External)", startDate: "24-Apr-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 20 Hours" },
+];
+
 const novCourses = [
   { course: "PMP-PMI US", startDate: "28-Nov-2025", time: "2:00 PM - 7:00 PM", frequency: "Fridays – 40 Hours" },
   { course: "PMP-PMI US", startDate: "21-Nov-2025", time: "7:30 AM – 11:30 AM", frequency: "Fridays – 40 Hours" },
