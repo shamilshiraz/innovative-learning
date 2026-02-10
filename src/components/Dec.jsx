@@ -111,6 +111,22 @@ const Schedule = () => {
       </div>
 
       <div className="my-8 border-t border-gray-300"></div>
+	  
+	   {/* Feb Section (nv) */}
+      <div id="schedule-nv" className="month-schedule">
+        <h3 className={monthHeaderClasses}>March 2026</h3>
+        {renderCourseTable(marchCourses)}
+      </div>
+
+      <div className="my-8 border-t border-gray-300"></div>
+	  
+	   {/* Feb Section (nv) */}
+      <div id="schedule-nv" className="month-schedule">
+        <h3 className={monthHeaderClasses}>April 2026</h3>
+        {renderCourseTable(aprCourses)}
+      </div>
+
+      <div className="my-8 border-t border-gray-300"></div>
 
      
     </section>
