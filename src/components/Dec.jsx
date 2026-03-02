@@ -13,7 +13,7 @@ const febCourses = [
 const marchCourses = [
   { course: " PMP-PMI US", startDate: "30-Mar-2026", time: " 7:00 PM-10:00 PM", frequency: "Mon, Wed, Sat. – 40 Hours" },
   { course: " PMP-PMI US", startDate: "27-Mar-2026", time: " 7:30 AM–11:30 AM", frequency: "Fridays Only – 40 Hours" },
-  { course: " CFM", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 40 Hours" },
+  { course: " Document Controller", startDate: "27-Mar-2026", time: " 3:00 PM–5:30 PM", frequency: "Fridays Only – 25 Hours" },
   { course: " CFPS", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 35 Hours" },
   { course: " ISO 9001-2015 (Internal & External)", startDate: "27-Mar-2026", time: " 2:00 PM–7:00 PM", frequency: "Fridays Only – 25 Hours" },
 ];
@@ -103,12 +103,6 @@ const Schedule = () => {
   return (
     <section className="p-4 sm:p-8 lg:p-12 bg-gray-50">
       <h2 className={headerClasses}>Specialized Courses Schedule</h2>
-
-      {/* Feb Section (nv) */}
-      <div id="schedule-nv" className="month-schedule">
-        <h3 className={monthHeaderClasses}>February 2026</h3>
-        {renderCourseTable(febCourses)}
-      </div>
 
       <div className="my-8 border-t border-gray-300"></div>
 	  
